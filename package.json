@@ -1,0 +1,21 @@
+{
+  "name": "packet-analyzer-dpi",
+  "version": "2.0.0",
+  "description": "Dependency-free Node.js PCAP deep packet inspection and filtering CLI",
+  "private": true,
+  "type": "commonjs",
+  "main": "src/main.js",
+  "bin": {
+    "packet-analyzer": "src/main.js"
+  },
+  "scripts": {
+    "start": "node src/main.js",
+    "analyze": "node src/main.js",
+    "generate:pcap": "node generate_test_pcap.js",
+    "packet": "node src/main_packet.js",
+    "dpi:sharded": "node src/dpi_mt.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
